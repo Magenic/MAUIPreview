@@ -1,0 +1,25 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FirstProject.CustomControlPage"
+             BackgroundColor="{DynamicResource PageBackgroundColor}"
+             xmlns:local="clr-namespace:FirstProject;assembly=FirstProject">
+
+    <ScrollView HorizontalOptions="Fill"
+                VerticalOptions="Fill"
+                BackgroundColor="Green">
+        <StackLayout
+            BackgroundColor="Red">
+            <Label Text="Just a label"
+                   FontSize="32"
+                   HorizontalTextAlignment="Start"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Fill" />
+            <local:CustomLabel
+                   Text="A Custom Label"
+                   FontSize="32"
+                   HorizontalTextAlignment="Start"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Fill" />
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
