@@ -1,0 +1,20 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"   
+             x:Class="LayoutDemo.StackLayoutExample">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="Fill" VerticalOptions="Fill" BackgroundColor="Green">
+            <Label Text="Center" VerticalOptions="Fill" HorizontalOptions="Center" BackgroundColor="Purple" />
+            <Label Text="Start" VerticalOptions="Fill" HorizontalOptions="Start" BackgroundColor="Orange" />
+            <Label Text="End" VerticalOptions="Fill" HorizontalOptions="End"  BackgroundColor="Blue" />
+            <Label Text="Fill" VerticalOptions="Fill" HorizontalOptions="Fill" BackgroundColor="Red" />
+            <StackLayout HorizontalOptions="Fill" VerticalOptions="Fill" BackgroundColor="Green" Orientation="Horizontal">
+                <Label Text="Start" VerticalOptions="Fill" HorizontalOptions="Start" BackgroundColor="LightBlue" />
+                <Label Text="Center" VerticalOptions="Fill" HorizontalOptions="CenterAndExpand" BackgroundColor="LightGreen" />
+                <Label Text="Fill" VerticalOptions="Fill" HorizontalOptions="Fill" BackgroundColor="Pink" />
+            </StackLayout>
+            <Label Text="StartAndExpand" VerticalOptions="StartAndExpand" HorizontalOptions="Fill" BackgroundColor="Aqua" />
+            <Label Text="EndAndExpand" VerticalOptions="EndAndExpand" HorizontalOptions="Fill" BackgroundColor="LightGrey" />
+            <Label Text="FillAndExpand" VerticalOptions="FillAndExpand" HorizontalOptions="Fill" BackgroundColor="DeepSkyBlue" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

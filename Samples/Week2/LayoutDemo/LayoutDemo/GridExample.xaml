@@ -1,0 +1,33 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"   
+             x:Class="LayoutDemo.GridExample">
+    <ContentPage.Content>
+        <Grid HorizontalOptions="Fill" VerticalOptions="Fill" BackgroundColor="Green" RowSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Label Text="Center" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3" HorizontalOptions="Center" BackgroundColor="Purple" />
+            <Label Text="Start" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="3" HorizontalOptions="Start" BackgroundColor="Orange" />
+            <Label Text="End" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="3" HorizontalOptions="End"  BackgroundColor="Blue" />
+            <Label Text="Fill" Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="3" VerticalOptions="Fill" HorizontalOptions="Fill" BackgroundColor="Red" />
+            <Label Text="Start" Grid.Column="0" Grid.Row="4" HorizontalOptions="Start" BackgroundColor="LightBlue" />
+            <Label Text="Center" Grid.Column="1" Grid.Row="4" HorizontalOptions="CenterAndExpand" BackgroundColor="LightGreen" />
+            <Label Text="Fill" Grid.Column="2" Grid.Row="4" HorizontalOptions="Fill" BackgroundColor="Pink" />
+            <Label Text="Start" Grid.Column="0" Grid.Row="5" Grid.ColumnSpan="3" VerticalOptions="Start" BackgroundColor="Aqua" />
+            <Label Text="End" Grid.Column="0" Grid.Row="6" Grid.ColumnSpan="3" VerticalOptions="End" BackgroundColor="LightGrey" />
+            <Label Text="Vertical Fill" Grid.Column="0" Grid.Row="7" Grid.ColumnSpan="3" VerticalOptions="Fill" BackgroundColor="DeepSkyBlue" />
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

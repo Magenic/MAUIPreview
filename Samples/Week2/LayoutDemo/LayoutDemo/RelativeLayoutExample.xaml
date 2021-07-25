@@ -1,0 +1,28 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"   
+             x:Class="LayoutDemo.RelativeLayoutExample">
+    <ContentPage.Content>
+        <RelativeLayout HorizontalOptions="Fill" VerticalOptions="Fill">
+            <BoxView HeightRequest="50" WidthRequest="50" BackgroundColor="Red"
+                RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=.5, Constant=-25}"
+                RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=.5, Constant=-25}"
+            />
+            <BoxView HeightRequest="50" WidthRequest="50" BackgroundColor="Green"
+                RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=.5, Constant=-65}"
+                RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=.5, Constant=-65}"
+            />
+            <BoxView HeightRequest="50" WidthRequest="50" BackgroundColor="Orange"
+                RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=.5, Constant=-65}"
+                RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=.5, Constant=10}"
+            />
+            <BoxView HeightRequest="50" WidthRequest="50" BackgroundColor="Purple"
+                RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=.5, Constant=10}"
+                RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=.5, Constant=-65}"
+            />
+            <BoxView HeightRequest="50" WidthRequest="50" BackgroundColor="Grey"
+                RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=.5, Constant=10}"
+                RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=.5, Constant=10}"
+            />
+        </RelativeLayout>
+    </ContentPage.Content>
+</ContentPage>

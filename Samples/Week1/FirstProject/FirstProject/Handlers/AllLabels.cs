@@ -12,10 +12,10 @@ namespace FirstProject.Handlers
         public static void SetupHandler()
         {
 #if __ANDROID__
-            Microsoft.Maui.Handlers.LabelHandler.LabelMapper[nameof(Microsoft.Maui.Controls.VisualElement.BackgroundColor)] = (h, v) =>
+            Microsoft.Maui.Handlers.LabelHandler.LabelMapper.Add("fjksdfksdlfks", (h, v) =>
             {
                 (h.NativeView as Android.Views.View).SetBackgroundColor(Android.Graphics.Color.ForestGreen);
-            };
+            });
 #endif
         }
     }
