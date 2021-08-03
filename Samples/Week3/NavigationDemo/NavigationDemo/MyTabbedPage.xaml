@@ -1,0 +1,17 @@
+<TabbedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NavigationDemo.MyTabbedPage"
+            xmlns:layouts="clr-namespace:NavigationDemo">
+    <TabbedPage.Children>
+        <NavigationPage Title="First Tab" BackgroundColor="#512BD4">
+            <x:Arguments>
+                <layouts:PageA></layouts:PageA>
+            </x:Arguments>
+        </NavigationPage>
+        <ContentPage Title="Tab 1"></ContentPage>
+        <ContentPage Title="Tab 2"></ContentPage>
+        <ContentPage Title="Tab 3"></ContentPage>
+        <ContentPage Title="Tab 4"></ContentPage>
+        <ContentPage Title="Tab 5"></ContentPage>
+    </TabbedPage.Children>
+</TabbedPage>

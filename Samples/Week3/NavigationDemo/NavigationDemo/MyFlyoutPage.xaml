@@ -1,0 +1,15 @@
+<FlyoutPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NavigationDemo.MyFlyoutPage"
+            xmlns:layouts="clr-namespace:NavigationDemo">
+    <FlyoutPage.Flyout>
+        <layouts:MyFlyout x:Name="flyoutPage" />
+    </FlyoutPage.Flyout>
+    <FlyoutPage.Detail>
+        <NavigationPage>
+            <x:Arguments>
+                <layouts:PageA />
+            </x:Arguments>
+        </NavigationPage>
+    </FlyoutPage.Detail>
+</FlyoutPage>

@@ -1,0 +1,10 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NavigationDemo.PageB">
+
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical">
+            <Button Text="Do Operation" Clicked="Modal_Nav"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
