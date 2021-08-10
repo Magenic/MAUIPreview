@@ -16,7 +16,7 @@ namespace NavigationDemo
 			navPage.BarTextColor = Colors.White;
 			navPage.BarBackgroundColor = Color.FromArgb("#512BD4");
 
-			MainPage = navPage;
+			MainPage = new MyCarouselPage();
 		}
 	}
 }

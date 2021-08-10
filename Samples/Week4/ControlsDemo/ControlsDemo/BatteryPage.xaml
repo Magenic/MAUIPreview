@@ -1,0 +1,13 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ControlsDemo.BatteryPage"
+             Title="Battery">
+    <ScrollView Padding="{OnPlatform iOS='30,60,30,30', Default='30'}">
+        <StackLayout>
+            <Label Text="{Binding ChargeLevel}" TextColor="Black" WidthRequest="300" HorizontalOptions="Start" />
+            <Label Text="{Binding EnergySaver}" TextColor="Black" WidthRequest="300" HorizontalOptions="Start" />
+            <Label Text="{Binding PowerSource}" TextColor="Black" WidthRequest="300" HorizontalOptions="Start" />
+            <Label Text="{Binding State}" TextColor="Black" WidthRequest="300" HorizontalOptions="Start" />
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
