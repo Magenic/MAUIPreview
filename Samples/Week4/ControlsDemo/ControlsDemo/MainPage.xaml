@@ -12,6 +12,7 @@
             <Button Text="Compass" Clicked="OnCompassClicked" />
             <Button Text="Connectivity" Clicked="OnConnectivityClicked" />
             <Button Text="Contacts" Clicked="OnContactsClicked" />
+            <Button Text="Device Info" Clicked="OnDeviceInfoClicked" />
             <Button Text="Media" Clicked="OnMediaClicked" />
             <Button Text="Secure Storage" Clicked="OnSecureStorageClicked" />
         </StackLayout>

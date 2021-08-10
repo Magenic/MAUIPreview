@@ -46,6 +46,11 @@ namespace ControlsDemo
 			await Navigation.PushAsync(new ContactsPage());
 		}
 
+		private async void OnDeviceInfoClicked(object sender, EventArgs e)
+		{
+			await Navigation.PushAsync(new DeviceInfoPage());
+		}
+
 		private async void OnMediaClicked(object sender, EventArgs e)
 		{
 			await Navigation.PushAsync(new MediaPage());

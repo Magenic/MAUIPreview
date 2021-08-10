@@ -1,0 +1,17 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ControlsDemo.DeviceInfoPage"
+             Title="Device Info">
+    <ScrollView Padding="{OnPlatform iOS='30,60,30,30', Default='30'}">
+        <StackLayout>
+            <Label Text="{Binding DeviceType}" TextColor="Black" WidthRequest="300" HorizontalOptions="Start" />
+            <Label Text="{Binding Idiom}" TextColor="Black" WidthRequest="300" HorizontalOptions="Start" />
+            <Label Text="{Binding Manufacturer}" TextColor="Black" WidthRequest="300" HorizontalOptions="Start" />
+            <Label Text="{Binding Model}" TextColor="Black" WidthRequest="300" HorizontalOptions="Start" />
+            <Label Text="{Binding Name}" TextColor="Black" WidthRequest="300" HorizontalOptions="Start" />
+            <Label Text="{Binding Platform}" TextColor="Black" WidthRequest="300" HorizontalOptions="Start" />
+            <Label Text="{Binding Version}" TextColor="Black" WidthRequest="300" HorizontalOptions="Start" />
+            <Label Text="{Binding VersionString}" TextColor="Black" WidthRequest="300" HorizontalOptions="Start" />
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

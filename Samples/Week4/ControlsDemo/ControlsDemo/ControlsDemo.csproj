@@ -34,6 +34,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Update="DeviceInfoPage.xaml.cs">
+	    <DependentUpon>DeviceInfoPage.xaml</DependentUpon>
+	  </Compile>
 	  <Compile Update="SecureStoragePage.xaml.cs">
 	    <DependentUpon>SecureStoragePage.xaml</DependentUpon>
 	  </Compile>
@@ -64,6 +67,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="DeviceInfoPage.xaml">
+	    <SubType>Designer</SubType>
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="SecureStoragePage.xaml">
 	    <SubType>Designer</SubType>
 	    <Generator>MSBuild:Compile</Generator>
